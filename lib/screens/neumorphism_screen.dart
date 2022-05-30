@@ -10,24 +10,24 @@ class NeumorphismScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Container(
+            SizedBox(
               height: (MediaQuery.of(context).size.height - MediaQuery.of(context).padding.top) * 0.1,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
+                children: const [
                   Icon(Icons.menu, size: 32,),
-                  Text('Playlist', style: TextStyle(fontSize: 26, fontWeight: FontWeight.w400),),
+                  Text('Playlist', style: TextStyle(fontSize: 26, fontWeight: FontWeight.w400, letterSpacing: 1.5, color: Colors.black54),),
                   Icon(Icons.more_horiz, size: 32,),
                 ],
               ),
             ),
-            Container(
+            SizedBox(
               height: (MediaQuery.of(context).size.height - MediaQuery.of(context).padding.top) * 0.66,
               width: MediaQuery.of(context).size.width * 0.9,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Image.network('https://ipurple.eu/1013-large_default/twice-more-more.jpg', fit: BoxFit.cover),
+                  Image.network('https://ipurple.eu/1013-large_default/twice-more-more.jpg', fit: BoxFit.cover, height: (MediaQuery.of(context).size.height - MediaQuery.of(context).padding.top) * 0.56),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -35,17 +35,17 @@ class NeumorphismScreen extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           SizedBox(height: (MediaQuery.of(context).size.height - MediaQuery.of(context).padding.top) * 0.01,),
-                          Text('More & More', style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold),),
-                          Text('JYP Entertainment', style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),),
+                          const Text('More & More', style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold),),
+                          const Text('JYP Entertainment', style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600, color: Colors.black54,),),
                         ],
                       ),
-                      Icon(Icons.favorite_border_outlined, color: Colors.red, size: 34,),
+                      const Icon(Icons.favorite_border_outlined, color: Colors.red, size: 34,),
                     ],
                   ),
                 ],
               ),
             ),
-            Container(
+            SizedBox(
               height: (MediaQuery.of(context).size.height - MediaQuery.of(context).padding.top) * 0.14,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -53,10 +53,10 @@ class NeumorphismScreen extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: const [
-                      Text('3:11'),
-                      Icon(Icons.crop),
-                      Icon(Icons.repeat),
-                      Text('4:22'),
+                      Text('2:11'),
+                      Icon(Icons.crop, color: Colors.black54,),
+                      Icon(Icons.repeat, color: Colors.black54,),
+                      Text('4:01'),
                     ],
                   ),
                   Stack(
@@ -86,14 +86,14 @@ class NeumorphismScreen extends StatelessWidget {
                 ],
               ),
             ),
-            Container(
+            SizedBox(
               height: (MediaQuery.of(context).size.height - MediaQuery.of(context).padding.top) * 0.1,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: const [
-                  Icon(Icons.arrow_back_ios, size: 32),
-                  Icon(Icons.pause, size: 32),
-                  Icon(Icons.arrow_forward_ios, size: 32),
+                  Icon(Icons.arrow_back_ios, color: Colors.black54,size: 32),
+                  Icon(Icons.pause, color: Colors.black54, size: 32),
+                  Icon(Icons.arrow_forward_ios, color: Colors.black54, size: 32),
                 ],
               ),
             ),
