@@ -62,7 +62,7 @@ class NeumorphismScreen extends StatelessWidget {
                   SizedBox(height: MediaQuery.of(context).size.height * 0.01,),
                   Center(
                     child: Container(
-                      height: (MediaQuery.of(context).size.height - MediaQuery.of(context).padding.top) * 0.52,
+                      height: (MediaQuery.of(context).size.height - MediaQuery.of(context).padding.top) * 0.51,
                       width: MediaQuery.of(context).size.width * 0.86,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(4),
@@ -74,7 +74,7 @@ class NeumorphismScreen extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(top: 5.0, left: 15.0, right: 15.0),
+                    padding: const EdgeInsets.only(left: 15.0, right: 15.0),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
